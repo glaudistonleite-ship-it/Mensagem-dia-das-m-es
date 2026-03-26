@@ -11,9 +11,10 @@
   
   --font-serif: "Playfair Display", serif;
   --font-sans: "Inter", sans-serif;
+  --font-cursive: "Great Vibes", cursive;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Great+Vibes&display=swap');
 
 body {
   background-color: var(--color-rose-50);
@@ -23,6 +24,10 @@ body {
 
 .font-serif {
   font-family: var(--font-serif);
+}
+
+.font-cursive {
+  font-family: var(--font-cursive);
 }
 
 .glass-card {

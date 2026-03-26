@@ -178,13 +178,24 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen pb-12">
+    <div className="min-h-screen pb-12 relative">
+      {/* Background Image Overlay */}
+      <div 
+        className="fixed inset-0 z-0 pointer-events-none opacity-[0.03]"
+        style={{ 
+          backgroundImage: `url('https://storage.googleapis.com/m-infra.appspot.com/public/res/67e466373760450009767895/67e466373760450009767895.png')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat'
+        }}
+      />
+
       {/* Top Notification Bar */}
       <div className="bg-rose-400 text-white py-3 px-4 text-center text-sm font-medium shadow-md sticky top-0 z-50 flex items-center justify-center gap-2 overflow-hidden">
         <span>Já enviou mensagem para sua mãe hoje? ❤️</span>
       </div>
 
-      <main className="max-w-2xl mx-auto px-6 pt-8">
+      <main className="max-w-2xl mx-auto px-6 pt-8 relative z-10">
         {/* Header */}
         <header className="text-center mb-10">
           <motion.div 
@@ -194,8 +205,7 @@ export default function App() {
           >
             <Heart className="w-10 h-10 text-rose-400 fill-rose-400" />
           </motion.div>
-          <h1 className="text-4xl font-serif font-bold text-rose-600 mb-2">Mãe Coração</h1>
-          <p className="text-rose-400 italic">Espalhando amor em cada palavra</p>
+          <p className="text-rose-400 italic text-xl">Espalhando amor em cada palavra</p>
         </header>
 
         {/* Personalization Section - Now at the top */}
