@@ -1,0 +1,7 @@
+{
+  "name": "Mensagens dia das Mães",
+  "description": "Um aplicativo delicado para criar e compartilhar mensagens especiais de Dia das Mães, com personalização e caricaturas artísticas.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
